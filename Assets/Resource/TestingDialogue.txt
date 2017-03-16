@@ -1,0 +1,6 @@
+David;Hey what's up;0;R
+Daivd;Nothing much man;0;L
+David;Oh that's cool;0;R
+Player;Restart:line,0;Continue:line,4
+David;This is a test;0;L
+David;Test test test test;0;R
