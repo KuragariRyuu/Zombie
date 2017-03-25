@@ -19,7 +19,6 @@ public class DialogueManager : MonoBehaviour
 
     public Text dialogueBox;
     public Text nameBox;
-    public GameObject choiceBox;
 
     // Use this for initialization
     void Start()
@@ -56,22 +55,13 @@ public class DialogueManager : MonoBehaviour
     {
         if (!playerTalking)
         {
-            ClearButtons();
+        
         }
         dialogueBox.text = dialogue;
         nameBox.text = characterName;
     }
 
-    void ClearButtons()
-    {
-        for (int i = 0; i < buttons.Count; i++)
-        {
-            print("Clearing buttons");
-            Button b = buttons[i];
-            buttons.Remove(b);
-            Destroy(b.gameObject);
-        }
-    }
+  
 
     void ParseLine()
     {
@@ -102,27 +92,10 @@ public class DialogueManager : MonoBehaviour
             pose = 0;
             position = "";
             options = parser.GetOptions(lineNum);
-            CreateButtons();
         }
     }
 
-    void CreateButtons()
-    {
-        for (int i = 0; i < options.Length; i++)
-        {
-            GameObject button = (GameObject)Instantiate(choiceBox);
-            Button b = button.GetComponent<Button>();
-            ChoiceButton cb = button.GetComponent<ChoiceButton>();
-            cb.SetText(options[i].Split(':')[0]);
-            cb.option = options[i].Split(':')[1];
-            cb.box = this;
-            b.transform.SetParent(this.transform);
-            b.transform.localPosition = new Vector3(0, -25 + (i * 50));
-            b.transform.localScale = new Vector3(1, 1, 1);
-            buttons.Add(b);
-        }
-    }
-
+   
     void ResetImages()
     {
         if (characterName != "")
@@ -151,11 +124,11 @@ public class DialogueManager : MonoBehaviour
     {
         if (position == "L")
         {
-            spriteObj.transform.position = new Vector3(-6, 50);
+            spriteObj.transform.position = new Vector3(-500, -10);
         }
         else if (position == "R")
         {
-            spriteObj.transform.position = new Vector3(6, 100);
+            spriteObj.transform.position = new Vector3(500, -10);
         }
         spriteObj.transform.position = new Vector3(spriteObj.transform.position.x, spriteObj.transform.position.y, 0);
     }
