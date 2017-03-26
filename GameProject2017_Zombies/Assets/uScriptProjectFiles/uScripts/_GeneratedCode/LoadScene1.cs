@@ -36,7 +36,7 @@ public class LoadScene1 : uScriptLogic
    //logic nodes
    //pointer to script instanced logic node
    uScriptAct_LoadLevel logic_uScriptAct_LoadLevel_uScriptAct_LoadLevel_0 = new uScriptAct_LoadLevel( );
-   System.String logic_uScriptAct_LoadLevel_name_0 = "Scene1";
+   System.String logic_uScriptAct_LoadLevel_name_0 = "TryToFixBugScene1";
    System.Boolean logic_uScriptAct_LoadLevel_destroyOtherObjects_0 = (bool) true;
    System.Boolean logic_uScriptAct_LoadLevel_blockUntilLoaded_0 = (bool) true;
    bool logic_uScriptAct_LoadLevel_Out_0 = true;

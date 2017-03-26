@@ -1,12 +1,12 @@
-Joesph;Hey is there a spot left in your group?;0;R
-Falise;Of course, good to have you Joesph;0;L
-Joesph;Good to be here as well;0;R
+Joseph;Hey is there a spot left in your group?;0;R
+Falise;Of course, good to have you Joseph;0;L
+Joseph;Good to be here as well;0;R
  ;Joshua enters the room;0;L;
-Joesph;Wait, why are you here Josuha you should be at home right now;0;R
+Joseph;Wait, why are you here Josuha you should be at home right now;0;R
 Joshua;I saw you left so i followed you.....;0;L
-Joesph;This isn't a safe place for you. Go back home right now!;0;R
+Joseph;This isn't a safe place for you. Go back home right now!;0;R
 Joshua;But i want to stay with you. I want to help.;0;L
-Falise;Its alright Joesph he can stay for a while no worries.;0;L
+Falise;Its alright Joseph he can stay for a while no worries.;0;L
 Falise;So you want to join us Joshua?;0;L
 Joshua;Yes.;0;L
 Falise;Its gonna be a hard task to be with us so be prepared;0;L
