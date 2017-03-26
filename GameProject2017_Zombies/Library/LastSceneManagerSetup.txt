@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/TryToFixBugScene1.unity
+- path: Assets/Scenes/StartPage.unity
   isLoaded: 1
   isActive: 1

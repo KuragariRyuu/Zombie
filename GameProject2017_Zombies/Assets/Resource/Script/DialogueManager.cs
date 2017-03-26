@@ -20,6 +20,8 @@ public class DialogueManager : MonoBehaviour
     public Text dialogueBox;
     public Text nameBox;
 
+    public float eachCharDelay; //time delay between each char
+
     // Use this for initialization
     void Start()
     {
@@ -49,15 +51,17 @@ public class DialogueManager : MonoBehaviour
     {
        ResetImages();
        ParseLine();
+       StartCoroutine(DisplayString(dialogue));
     }
 
     void UpdateUI()
     {
         if (!playerTalking)
         {
-        
         }
-        dialogueBox.text = dialogue;
+
+
+        //StartCoroutine(DisplayString(dialogue));
         nameBox.text = characterName;
     }
 
@@ -132,4 +136,33 @@ public class DialogueManager : MonoBehaviour
         //}
         //spriteObj.transform.position = new Vector3(spriteObj.transform.position.x, spriteObj.transform.position.y, 0);
     }
+
+    private IEnumerator DisplayString(string stringToDisplay)
+    {
+        playerTalking = true;
+        int stringLength = stringToDisplay.Length;
+        int currentCharIndex = 0;
+
+        dialogueBox.text = "";
+        while (currentCharIndex < stringLength)
+        {
+            dialogueBox.text += stringToDisplay[currentCharIndex];
+            currentCharIndex++;
+
+            if (currentCharIndex < stringLength)
+            {
+                yield return new WaitForSeconds(eachCharDelay);
+            }
+            else
+            {
+                break;
+            }
+        }
+        dialogueBox.text = dialogue;
+        playerTalking = false;
+    }
+
+
+
+
 }

@@ -19,7 +19,7 @@ Platform assembly: C:\Users\Kunnatee\Documents\BlueHearts by Zombie\GameProject2
 Loading C:\Users\Kunnatee\Documents\BlueHearts by Zombie\GameProject2017_Zombies\1_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll into Unity Child Domain
 Platform assembly: C:\Users\Kunnatee\Documents\BlueHearts by Zombie\GameProject2017_Zombies\1_Data\Managed\uScriptRuntime.dll (this message is harmless)
 Loading C:\Users\Kunnatee\Documents\BlueHearts by Zombie\GameProject2017_Zombies\1_Data\Managed\uScriptRuntime.dll into Unity Child Domain
-- Completed reload, in  0.080 seconds
+- Completed reload, in  0.491 seconds
 Platform assembly: C:\Users\Kunnatee\Documents\BlueHearts by Zombie\GameProject2017_Zombies\1_Data\Managed\System.Core.dll (this message is harmless)
 Platform assembly: C:\Users\Kunnatee\Documents\BlueHearts by Zombie\GameProject2017_Zombies\1_Data\Managed\System.dll (this message is harmless)
 OnLevelWasLoaded was found on uScript_Level
@@ -31,18 +31,3 @@ Add a delegate to SceneManager.sceneLoaded instead to get notifications after sc
 desktop: 1366x768 60Hz; virtual: 1366x768 at 0,0
 <RI> Initializing input.
 <RI> Input initialized.
-<RI> Initialized touch support.
-UnloadTime: 2.199579 ms
-Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 7.847615 ms
-
-Unloading 26 unused Assets to reduce memory usage. Loaded Objects now: 1028.
-Total: 0.591488 ms (FindLiveObjects: 0.067521 ms CreateObjectMapping: 0.094530 ms MarkObjects: 0.341928 ms  DeleteObjects: 0.084266 ms)
-
-Scene 'Scene2' couldn't be loaded because it has not been added to the build settings or the AssetBundle has not been loaded.
-To add a scene to the build settings use the menu File->Build Settings...
- 
-(Filename:  Line: 127)
-
-Setting up 1 worker threads for Enlighten.
-  Thread -> id: 1978 -> priority: 1 
