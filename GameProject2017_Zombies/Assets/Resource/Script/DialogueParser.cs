@@ -71,11 +71,11 @@ public class DialogueParser : MonoBehaviour
                         DialogueLine lineEntry = new DialogueLine(lineData[0], lineData[1], 0, "");
                         lines.Add(lineEntry);
                     }
-                else
-                {
-                    DialogueLine lineEntry = new DialogueLine(lineData[0], lineData[1], int.Parse(lineData[2]), lineData[3]);
-                    lines.Add(lineEntry);
-                }
+                    else
+                    {
+                        DialogueLine lineEntry = new DialogueLine(lineData[0], lineData[1], int.Parse(lineData[2]), lineData[3]);
+                        lines.Add(lineEntry);
+                    }
                 }
             }
             while (line != null);

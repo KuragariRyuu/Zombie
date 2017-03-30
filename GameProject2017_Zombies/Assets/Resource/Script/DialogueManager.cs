@@ -16,12 +16,14 @@ public class DialogueManager : MonoBehaviour
     string[] options;
     public bool playerTalking;
     List<Button> buttons = new List<Button>();
-
     public Text dialogueBox;
     public Text nameBox;
 
-    public float eachCharDelay; //time delay between each char
+    public bool StringIsDisplaying = false;
+    public GameObject choiceBox;
+    public float eachCharDelay = 0.3f; //time delay between each char
 
+    int i = 0;
     // Use this for initialization
     void Start()
     {
@@ -35,14 +37,16 @@ public class DialogueManager : MonoBehaviour
     }
 
     // Update is called once per frame
+    
     void Update()
     {
-        if (Input.GetMouseButtonDown(0) && playerTalking == false)
+        if (Input.GetMouseButtonDown(0) && playerTalking == false && StringIsDisplaying == false)
         {
             ShowDialogue();
 
             lineNum++;
         }
+       
 
         UpdateUI();
     }
@@ -58,6 +62,7 @@ public class DialogueManager : MonoBehaviour
     {
         if (!playerTalking)
         {
+            ClearButtons();
         }
 
 
@@ -96,10 +101,41 @@ public class DialogueManager : MonoBehaviour
             pose = 0;
             position = "";
             options = parser.GetOptions(lineNum);
+            CreateButtons();
+       
         }
     }
 
-   
+ 
+    void ClearButtons()
+    {
+        for (int i = 0; i < buttons.Count; i++)
+        {
+            print("Clearing buttons");
+            Button b = buttons[i];
+            buttons.Remove(b);
+            Destroy(b.gameObject);
+        }
+    }
+
+    void CreateButtons()
+    {
+        for (int i = 0; i < options.Length; i++)
+        {
+            GameObject button = (GameObject)Instantiate(choiceBox);
+            Button b = button.GetComponent<Button>();
+            ChoiceButton cb = button.GetComponent<ChoiceButton>();
+            cb.SetText(options[i].Split(':')[0]);
+            cb.option = options[i].Split(':')[1];
+            cb.box = this;
+            b.transform.SetParent(this.transform);
+            b.transform.localPosition = new Vector3(400, 200 + (i * 50));
+            b.transform.localScale = new Vector3(1, 1, 1);
+            buttons.Add(b);
+        }
+    }
+
+
     void ResetImages()
     {
         if (characterName != "")
@@ -123,23 +159,10 @@ public class DialogueManager : MonoBehaviour
         }
     }
 
-
-    void SetSpritePositions(GameObject spriteObj)
-    {
-        //if (position == "L")
-        //{
-        //    spriteObj.transform.position = new Vector3(-500, -10);
-        //}
-        //else if (position == "R")
-        //{
-        //    spriteObj.transform.position = new Vector3(500, -10);
-        //}
-        //spriteObj.transform.position = new Vector3(spriteObj.transform.position.x, spriteObj.transform.position.y, 0);
-    }
-
     private IEnumerator DisplayString(string stringToDisplay)
     {
-        playerTalking = true;
+        StringIsDisplaying = true;
+        
         int stringLength = stringToDisplay.Length;
         int currentCharIndex = 0;
 
@@ -159,7 +182,8 @@ public class DialogueManager : MonoBehaviour
             }
         }
         dialogueBox.text = dialogue;
-        playerTalking = false;
+        StringIsDisplaying = false;
+        
     }
 
 

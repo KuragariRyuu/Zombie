@@ -1,6 +1,7 @@
 Joseph;Hey is there a spot left in your group?;0;R
 Falise;Of course, good to have you Joseph;0;L
 Joseph;Good to be here as well;0;R
+Player;Restart:line,0;Continue:line,6
  ;Joshua enters the room;0;L;
 Joseph;Wait, why are you here Joshua you should be at home right now;0;R
 Joshua;I saw you left so i followed you.....;0;L
@@ -11,3 +12,4 @@ Falise;So you want to join us Joshua?;0;L
 Joshua;Yes.;0;L
 Falise;Its gonna be a hard task to be with us so be prepared;0;L
 LoadScenes;Scene2
+
