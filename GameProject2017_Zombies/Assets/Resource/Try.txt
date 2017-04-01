@@ -1,0 +1,10 @@
+ :I followed Joseph into the town. Looks like he doesn't know im following him.;0;L
+Joshua:What is Joeseph doing out here in the dark?;0;R
+Joshua:Should i follow him?;0;R
+Player;Follow:line,7;Go Back Home:line;4
+Joshua:Hmmm. Don't think its a good idea to follow him. I guess i will head home.;0;R
+LoadScenes;Scene7
+ :I hesitated for a while but i decided to follow;0;L
+ :The town awfully seems quiet, but it's been like that since the Germans occupied France, Everyone's been in doors ever since then. Hopefully i don't run into any of the Nazi patrol.;0;L
+LoadScenes;Scene2
+ 

@@ -1,0 +1,2 @@
+ ;I followed Joesph into the back ally.;0;L
+LoadScenes;StartPage

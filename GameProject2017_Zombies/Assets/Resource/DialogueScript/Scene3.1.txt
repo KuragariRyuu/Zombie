@@ -1,0 +1,11 @@
+ ;We ran to a brick house. Looks abandon not sure why we stopped here.;0;L
+ ;I looked around and saw a bulky man standing near the door.;0;L
+ ;I hope we are not gonna have any problems with that guy or go even go near him. See seems alittle suspicious standing near a door;0;L
+ ;Joesph walked towards the man without worry as if he knows him.;0;L
+Joseph;Mon coeur bleu sera sauve;0;L
+ ;The man noded as Joesph spoke those words.;0;L
+ ;Mon coeur bleu sera sauve?;0;L
+ ;Joesph opens the door and looked at me.;0;L
+Joseph;Come on,lets go;0;L
+LoadScenes;Scene4.1
+

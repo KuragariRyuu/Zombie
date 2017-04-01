@@ -22,8 +22,6 @@ public class DialogueManager : MonoBehaviour
     public bool StringIsDisplaying = false;
     public GameObject choiceBox;
     public float eachCharDelay = 0.3f; //time delay between each char
-
-    int i = 0;
     // Use this for initialization
     void Start()
     {
@@ -82,7 +80,7 @@ public class DialogueManager : MonoBehaviour
             pose = 0;
             position = "";
 
-            SceneManager.LoadScene("Scene2");
+            SceneManager.LoadScene(parser.GetContent(lineNum));
         }
         else if (parser.GetName(lineNum) != "Player")
         {
@@ -120,6 +118,7 @@ public class DialogueManager : MonoBehaviour
 
     void CreateButtons()
     {
+        
         for (int i = 0; i < options.Length; i++)
         {
             GameObject button = (GameObject)Instantiate(choiceBox);

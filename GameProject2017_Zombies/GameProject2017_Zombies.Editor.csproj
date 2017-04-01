@@ -130,8 +130,14 @@
     <Compile Include="Assets\uScriptProjectFiles\Editor\uScriptMenuLocation.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Assets\Resource\Scene1.txt" />
+    <None Include="Assets\Resource\DialogueScript\Scene1.txt" />
+    <None Include="Assets\Resource\DialogueScript\Scene1Try.txt" />
+    <None Include="Assets\Resource\DialogueScript\Scene2.txt" />
+    <None Include="Assets\Resource\DialogueScript\Scene3.1.txt" />
+    <None Include="Assets\Resource\DialogueScript\Scene3.2.txt" />
+    <None Include="Assets\Resource\DialogueScript\Scene4.1.txt" />
     <None Include="Assets\Resource\Scene2.txt" />
+    <None Include="Assets\Resource\Try.txt" />
     <None Include="Assets\Text\DialogueScene1.txt" />
     <None Include="Assets\uScript\ReadMe.txt" />
   </ItemGroup>

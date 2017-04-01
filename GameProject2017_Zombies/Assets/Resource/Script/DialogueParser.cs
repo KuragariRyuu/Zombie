@@ -29,7 +29,7 @@ public class DialogueParser : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-        file = "Assets/Resource/" + file;
+        file = "Assets/Resource/DialogueScript/" + file;
         file += ".txt";
 
         lines = new List<DialogueLine>();
