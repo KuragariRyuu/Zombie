@@ -1,9 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2015
+# Visual Studio 2017
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameProject2017_Zombies", "GameProject2017_Zombies.csproj", "{4C5741C4-CDDA-F475-979F-72799E75174D}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameProject2017_Zombies.Editor", "GameProject2017_Zombies.Editor.csproj", "{61512440-741B-20CA-B5EF-06D635F246BA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,10 +13,6 @@ Global
 		{4C5741C4-CDDA-F475-979F-72799E75174D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4C5741C4-CDDA-F475-979F-72799E75174D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4C5741C4-CDDA-F475-979F-72799E75174D}.Release|Any CPU.Build.0 = Release|Any CPU
-		{61512440-741B-20CA-B5EF-06D635F246BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{61512440-741B-20CA-B5EF-06D635F246BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{61512440-741B-20CA-B5EF-06D635F246BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{61512440-741B-20CA-B5EF-06D635F246BA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

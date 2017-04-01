@@ -36,10 +36,13 @@ public class ChoiceButton : MonoBehaviour
         string command = option.Split(',')[0];
         string commandModifier = option.Split(',')[1];
         box.playerTalking = false;
+        //box.buttonIsCreated = true;
+
         if (command == "line")
         {
             box.lineNum = int.Parse(commandModifier);
-            box.ShowDialogue();
+            box.ShowDialogue();     
+            box.lineNum++;       
         }
         else if (command == "scene")
         {

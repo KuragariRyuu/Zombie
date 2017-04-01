@@ -19,6 +19,7 @@ public class DialogueManager : MonoBehaviour
     public Text dialogueBox;
     public Text nameBox;
 
+    public bool buttonIsCreated = false;
     public bool StringIsDisplaying = false;
     public GameObject choiceBox;
     public float eachCharDelay = 0.3f; //time delay between each char
@@ -44,7 +45,9 @@ public class DialogueManager : MonoBehaviour
 
             lineNum++;
         }
-       
+
+
+
 
         UpdateUI();
     }
@@ -62,15 +65,14 @@ public class DialogueManager : MonoBehaviour
         {
             ClearButtons();
         }
-
-
+        
         //StartCoroutine(DisplayString(dialogue));
         nameBox.text = characterName;
     }
 
   
 
-    void ParseLine()
+    void ParseLine() 
     {
         if (parser.GetName(lineNum) == "LoadScenes")
         {
@@ -132,6 +134,7 @@ public class DialogueManager : MonoBehaviour
             b.transform.localScale = new Vector3(1, 1, 1);
             buttons.Add(b);
         }
+
     }
 
 

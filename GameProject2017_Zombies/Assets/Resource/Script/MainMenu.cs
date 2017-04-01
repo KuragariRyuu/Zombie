@@ -4,6 +4,8 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 public class MainMenu : MonoBehaviour {
 
+    public Animator startPageAnim;
+
 	// Use this for initialization
 	void Start () {
 		
@@ -15,7 +17,17 @@ public class MainMenu : MonoBehaviour {
 	}
     public void EnterGame()
     {
-       
+        startPageAnim.SetBool("Play", true);
+
+        StartCoroutine( StartGame());
+
+        //SceneManager.LoadScene("Scene1");
+    }
+
+    IEnumerator StartGame()
+    {
+        yield return new WaitForSeconds(1);
+
         SceneManager.LoadScene("Scene1");
     }
 }

@@ -53,14 +53,14 @@ public class DialogueParser : MonoBehaviour
             do
             {
                 line = r.ReadLine();
-                if (line != null)
+                //if (line != null)
                 {
                     string[] lineData = line.Split(';');
                     if (lineData[0] == "Player")
                     {
                         DialogueLine lineEntry = new DialogueLine(lineData[0], "", 0, "");
                         lineEntry.options = new string[lineData.Length - 1];
-                        for (int i = 1; i < lineData.Length; i++)
+                        for (int i = 1; i < lineData.Length; i++)//why using lineData.length to compare??? it will be outOfRange,right?
                         {
                             lineEntry.options[i - 1] = lineData[i];
                         }
