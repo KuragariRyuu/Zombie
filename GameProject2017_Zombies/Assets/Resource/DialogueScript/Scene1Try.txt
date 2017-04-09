@@ -11,5 +11,6 @@ Falise;Its alright Joseph he can stay for a while no worries.;0;L
 Falise;So you want to join us Joshua?;0;L
 Joshua;Yes.;0;L
 Falise;Its gonna be a hard task to be with us so be prepared;0;L
+SoundEffect;0
 LoadScenes;Scene2
 

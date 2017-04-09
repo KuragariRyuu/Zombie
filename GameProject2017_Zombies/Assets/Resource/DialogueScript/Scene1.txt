@@ -1,4 +1,4 @@
- ;I followed Joseph into the town. Looks like he doesn't know im following him;0;L;
+ ;I followed Joseph into the town. Looks like he doesn't know im following him;0;L; 
 Joshua;What is Joeseph doing out here in the dark?;0;L
 Joshua;Should i follow him?;0;L
 Player;Go Back Home:line,4;Follow:line,6

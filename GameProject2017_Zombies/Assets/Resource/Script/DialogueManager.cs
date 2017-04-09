@@ -8,6 +8,7 @@ public class DialogueManager : MonoBehaviour
 {
 
     DialogueParser parser;
+    public SoundManager soundManager;
     public string option;
     public string dialogue, characterName;
     public int lineNum;
@@ -39,15 +40,12 @@ public class DialogueManager : MonoBehaviour
     
     void Update()
     {
-        if (Input.GetMouseButtonDown(0) && playerTalking == false && StringIsDisplaying == false)
+        if (Input.GetMouseButtonDown(0) && playerTalking == false && StringIsDisplaying == false && PauseMenu.isPaused == false)
         {
             ShowDialogue();
 
             lineNum++;
         }
-
-
-
 
         UpdateUI();
     }
@@ -74,7 +72,17 @@ public class DialogueManager : MonoBehaviour
 
     void ParseLine() 
     {
-        if (parser.GetName(lineNum) == "LoadScenes")
+        if(parser.GetName(lineNum) == "SoundEffect")
+        {
+            playerTalking = true;
+            characterName = "";
+            dialogue = "";
+            pose = 0;
+            position = "";
+
+            PlaySound(parser.GetContent(lineNum));
+        }
+        else if (parser.GetName(lineNum) == "LoadScenes")
         {
             playerTalking = true;
             characterName = "";
@@ -188,6 +196,14 @@ public class DialogueManager : MonoBehaviour
         
     }
 
+    void PlaySound(string name)
+    {
+        int i = int.Parse(name);
+        soundManager.audio = soundManager.GetComponent<AudioSource>();
+        soundManager.audio.clip = soundManager.soundFX[0];
+        soundManager.audio.Play();
+        lineNum++; //somehow it still won't increment the line...i think
+    }
 
 
 

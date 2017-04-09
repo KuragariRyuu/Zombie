@@ -8,11 +8,13 @@ public class MainMenu : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		
+
+        Time.timeScale = 1;
 	}
-	
-	// Update is called once per frame
-	void Update () {
+
+
+    // Update is called once per frame
+    void Update () {
 		
 	}
     public void EnterGame()
@@ -29,5 +31,15 @@ public class MainMenu : MonoBehaviour {
         yield return new WaitForSeconds(1);
 
         SceneManager.LoadScene("Scene1");
+    }
+
+    public void ExitGame()
+    {
+        Application.Quit();
+    }
+
+    public void LoadGame()
+    {
+
     }
 }

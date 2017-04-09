@@ -60,13 +60,18 @@ public class DialogueParser : MonoBehaviour
                     {
                         DialogueLine lineEntry = new DialogueLine(lineData[0], "", 0, "");
                         lineEntry.options = new string[lineData.Length - 1];
-                        for (int i = 1; i < lineData.Length; i++)//why using lineData.length to compare??? it will be outOfRange,right?
+                        for (int i = 1; i < lineData.Length; i++)
                         {
                             lineEntry.options[i - 1] = lineData[i];
                         }
                         lines.Add(lineEntry);
                     }
                     else if (lineData[0] == "LoadScenes")
+                    {
+                        DialogueLine lineEntry = new DialogueLine(lineData[0], lineData[1], 0, "");
+                        lines.Add(lineEntry);
+                    }
+                    else if (lineData[0] == "SoundEffect") //for soundEffect
                     {
                         DialogueLine lineEntry = new DialogueLine(lineData[0], lineData[1], 0, "");
                         lines.Add(lineEntry);
