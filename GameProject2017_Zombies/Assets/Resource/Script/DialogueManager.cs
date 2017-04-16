@@ -79,8 +79,9 @@ public class DialogueManager : MonoBehaviour
             dialogue = "";
             pose = 0;
             position = "";
+            StartCoroutine( PlaySound( parser.GetContent(lineNum) ) );
 
-            PlaySound(parser.GetContent(lineNum));
+            //StringIsDisplaying = false;
         }
         else if (parser.GetName(lineNum) == "LoadScenes")
         {
@@ -196,13 +197,22 @@ public class DialogueManager : MonoBehaviour
         
     }
 
-    void PlaySound(string name)
+    private IEnumerator PlaySound(string name)
     {
+        StringIsDisplaying = true;
+
+
         int i = int.Parse(name);
         soundManager.audio = soundManager.GetComponent<AudioSource>();
-        soundManager.audio.clip = soundManager.soundFX[0];
+        soundManager.audio.clip = soundManager.soundFX[i];
         soundManager.audio.Play();
-        lineNum++; //somehow it still won't increment the line...i think
+
+        yield return new WaitForSeconds(soundManager.audio.clip.length);
+
+        playerTalking = false;
+        StringIsDisplaying = false;
+
+
     }
 
 
