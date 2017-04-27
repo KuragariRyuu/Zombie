@@ -3,16 +3,25 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+
 public class PauseMenu : MonoBehaviour {
 
     public static bool isPaused;
     public float windowWidth = 256;
     public float windowHeight = 100;
-
     public GUISkin newSkin;
 
-	// Use this for initialization
-	void Start () {
+    DialogueManager dManager;
+    DialogueParser dParser;
+
+    void Awake()
+    {
+        dManager = FindObjectOfType<DialogueManager>();
+        dParser = FindObjectOfType<DialogueParser>();
+    }
+
+    // Use this for initialization
+    void Start () {
         isPaused = false;
 	}
 	
@@ -56,11 +65,11 @@ public class PauseMenu : MonoBehaviour {
         }
         if (GUILayout.Button("Save"))
         {
-           // Save();
+            Save();
         }
         if(GUILayout.Button("Load"))
         {
-           // Load();
+            Load();
         }
         if (GUILayout.Button("Exit"))
         {
@@ -69,5 +78,16 @@ public class PauseMenu : MonoBehaviour {
 
         GUILayout.EndArea();
     }
-}
 
+    void Save()
+    {
+        dManager.SaveManager();
+      //  dParser.SaveParser();
+    }
+
+    void Load()
+    {
+        dManager = dManager.LoadManager();
+     //   dParser = dParser.LoadParser();
+    }   
+}

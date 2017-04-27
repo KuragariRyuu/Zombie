@@ -1,9 +1,11 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
+using System.Runtime.Serialization.Formatters.Binary;
 using System.IO;
 
 public class DialogueParser : MonoBehaviour
 {
+    public static DialogueParser dParser;
 
     struct DialogueLine
     {
@@ -24,7 +26,19 @@ public class DialogueParser : MonoBehaviour
     }
     public string file;
     List<DialogueLine> lines;
-    
+
+    //void Awake()
+    //{
+    //    if (dParser == null)
+    //    {
+    //        DontDestroyOnLoad(gameObject);
+    //        dParser = this;
+    //    }
+    //    else if (dParser != this)
+    //    {
+    //        Destroy(gameObject);
+    //    }
+    //}
 
     // Use this for initialization
     void Start()
@@ -53,7 +67,8 @@ public class DialogueParser : MonoBehaviour
             do
             {
                 line = r.ReadLine();
-                //if (line != null)
+
+                if (line != null)
                 {
                     string[] lineData = line.Split(';');
                     if (lineData[0] == "Player")
@@ -132,4 +147,35 @@ public class DialogueParser : MonoBehaviour
         }
         return new string[0];
     }
-};
+
+    public void SaveParser()
+    {
+        BinaryFormatter bf = new BinaryFormatter();
+        FileStream file = File.Create(Application.persistentDataPath + "/dParserInfo.dat");
+        DParserData data = new DParserData();
+        data.parser = dParser;
+        bf.Serialize(file, data);
+        file.Close();
+    }
+
+    public DialogueParser LoadParser()
+    {
+        if (File.Exists(Application.persistentDataPath + "/dPaserInfo.dat"))
+        {
+            BinaryFormatter bf = new BinaryFormatter();
+            FileStream file = File.Open(Application.persistentDataPath + "/dParserInfo.dat", FileMode.Open);
+            DParserData data = (DParserData)bf.Deserialize(file);
+            file.Close();
+
+            dParser = data.parser;
+        }
+
+        return dParser;
+    }
+}
+
+[System.Serializable]
+class DParserData
+{
+    public DialogueParser parser;
+}

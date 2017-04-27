@@ -10,6 +10,7 @@ public class SoundManager : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+
         //int i = 0;
         //audio = GetComponent<AudioSource>();
         //audio.clip = soundFX[i];

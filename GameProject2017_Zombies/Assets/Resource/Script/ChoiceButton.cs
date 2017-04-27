@@ -33,6 +33,9 @@ public class ChoiceButton : MonoBehaviour
 
     public void ParseOption()
     {
+        //since the choice is already made buttons can be cleared
+        box.ClearButtons();
+
         string command = option.Split(',')[0];
         string commandModifier = option.Split(',')[1];
         box.playerTalking = false;
@@ -42,12 +45,13 @@ public class ChoiceButton : MonoBehaviour
         {
             box.lineNum = int.Parse(commandModifier);
             box.ShowDialogue();     
-            box.lineNum++;       
+            box.lineNum++;  
         }
         else if (command == "scene")
         {
             SceneManager.LoadScene("Scene" + commandModifier);
 
         }
+
     }
 }
