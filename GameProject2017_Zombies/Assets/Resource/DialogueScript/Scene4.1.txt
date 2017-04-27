@@ -1,20 +1,20 @@
- ;I climbed down the ladder that was infront of the door;0;L
+ ;While i was climbing down the ladder that the door led me to i was confuse at the situation what did i get myself into?;0;L
  ;What is this place?;0;L
- ;Seems like a headquater of some sort. Sounds pretty hectic around here;0;L
- ;A blond man approaches me and my brother. He seems like a friendly guy;0;L
+ ;It seems like a headquater of some sort. Sounds pretty hectic around here;0;L
+ ;Then a blond man approaches me and my brother. He seems like a friendly guy;0;L
 Ludovic;Joseph Welcome to our headquater. You brought someone it with you it seems;0;R
 Joesph;Ahh, yes this is my little brother Joshua.;0;R
-Joesph;He followed me to town square and there was a Nazi patrol party so i had no other choice but to bring him with me;0;L
+Joesph;He followed me here so i had no other choice but to bring him with me;0;L
 Ludovic;It's alright the more the merrier.;0;R
 Joshua;Excuese me Mr..;0;L
 Ludovic;Ludovic;0;R
 Joshua;Mr. Ludovic what exactly is this place?;0;L
 Ludovic;This place is the Resistance Head Quater;0;R
 Joshua;Resistance?;0;L
-Ludovic;Yes, We are the resistance;0;R
+Ludovic;Yes, We are the resistance. We are fighting for the freedom of France.;0;R
 Ludovic;Do you wish to join like your brother?;0;R
 Player;Decline:line,16;Join:line,18
 Ludovic;Ahh, thats too bad. It would be great to have another helping hand around here. I won't force you, but you got to keep this a serect.;0;R
 LoadScenes;StartPage
-Ludovic; Perfect, We will bring end to this Nazi Regeme once and for all;0;R
+Ludovic;Perfect, We will bring end to this Nazi Regeme once and for all;0;R 
 LoadScenes;StartPage

@@ -1,0 +1,28 @@
+ ;As I approach Town Square, the place was now booming with towns folks.;0;L
+ ;They don't seem to mind the occupation anymore. It's been a while since I was here but, I've never seen this place so populated.;0;L
+ ;I should gather some intel on what's going on. There seems to be a group talking about something near the cafe. Could eavesdrop maybe I will learn something useful.;0;L
+ ;Hmmm... There is also a suspicious guy hiding near the fountain. Not sure what he wants but he might know something. Then there is a beggar near the alley, I could give him food to trade for something.;0;L
+ ;What should I do or should I just leave?';0;L
+Player;Leave:line,5;Ask the suspicious guy:line, ;Approach the beggar:line, ;Eavesdrop:line,7
+LoadScenes;
+ ;Guess the that group should know whats going on in this situation;0;L
+ ;I walk towards the group slowly as if I was just minding my own business and then picked up a newspaper on the cafe table and leaned near the cafe.;0;L
+ ;I advert my eyes to the group, I see four men in the group talking about something. So I started to listen in to their conversation;0;L
+Unknown Man;Seems like the Boches are more active around here. Not sure why but they busted our hideout a few days ago. Luckily someone tipped us off. We manage to evacuate the place before they came.;0;L
+Unknown Man;A message came from Ludovic and the rest they seemed to have reached the city of Caen.;0;L
+ ;Did I hear the name Ludovic? Who are they, I don't remember seeing them at the headquarters before. And whats the day? Is something happening soon?;0;L
+ ;I wasn't sure if they were allies or not. But,If they know about Ludovic i think they are part of the resistance.;0;L
+ ;As i approach the group they stared at me. I started to notice other stares coming from all around the villa. Seems like they were not alone. They didn't move thou, but only stared at me.;0;L
+Unknown Man;You are quiet brave or to approach us young lad. State your business.;0;L
+Joshua;I'm part of the resistance in Falaise. My name is Joshua Ancard, my brother is also inside name Joseph. I was out on a mission when the hideout got attacked, so i didn't know what to do. Have you seen my brother Joseph?;0;L
+Silvia;My name is Silviaand this is my crew. We are part of the leftover resistance in Falise;0;L
+ ;Luckily that I did not step on a wolf's tail. A gamble well paid off. But there are only a few people left here?;0;L 
+Joshua;There are only five people left?;0;L
+Silvia;Ah I forgot to tell you there are more than us. You see the guy sitting on the fountain right there and the beggar near the back alley? They are all part of our crew.;0;L
+Silvia;Since you were gone I will fill you in with some detailed that you miss.;0;L
+Joshua;Thanks;0;L
+Silvia;Three days ago we were attacked, luckily our scout told us about it first so we didn't get caught. Ever since then we moved almost all our operation to a different town. Our mission right now is to rontadvu with the scout near here to get intel about Nazi activities in Falaise.;0;L
+Joshua;Who is this person that you are going to meet?;0;L
+Silvia;We don't know. The only thing we know is that the person will respond to this phrase "It's along way to Paris".;0;L
+
+ 

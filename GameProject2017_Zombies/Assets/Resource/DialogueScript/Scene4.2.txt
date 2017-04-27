@@ -1,0 +1,25 @@
+ ;There is a bulky man standing near a brick house, but where is Joesph im sure i saw him coming this way.;0;L
+ ;Maybe i should ask him where did my brother go,but its alittle sketchy him standing there.;0;L
+Player;Approach:line,3;Stay:line,
+Joshua;Ummm... Mister have you seen anyone passby here?;0;L
+ ;He stood sliently as he smokes his cigar. No movement nothing. I wasn't sure if he deaf or he isn't interseted in talking?;0;L
+Joshua;Hello? Can you hear me? Mister?;0;L
+ ;Still no answer. What was the thing that my brother said? Mon coeur bleu sare saute? That doesn't sound right. But i've got no choice he isn't paying attention to me at all.;0;L
+Joshua;Mon coeur bleu sera sauve?;0;L
+ ;He turned his eyes an looked straight at me. It was full of killing intent. He pushed me into the wall and holding me high up so my leg won't touch the ground. It really hurt, but i wasn't sure what was going on.;0;L
+Joshua;Ouch... what are you doing? what did i do wrong?;0;L
+Bulky man; I know you aren't part of us. What are you doing, Were you spying on us?;0;R
+ ;I didn't answer cause of the pain i was in.;0;L
+ ;He puts more pressure on me as if there was two walls crushing me together;0;L
+Joshua;I was just following my brother. What did i do wrong anyway?;0;L
+ ;I could barely breath after saying that.;0;L
+ ;He doesn't seemed convice that i was following my brother.;0;L
+Joseph;What's going on? whats with the ruckus?;0;L
+Joseph;Joshua? What are you doing here? You should be home right now.;0;L
+Joshua;I was following you I was worried so i followed you here.;0;L
+Joseph;Hey let go of my brother.;0;L
+ ;The person released me down from the wall. I barely could stand up after that.;0;L
+ ;It hurts so much. Whats the big deal here anyway?;0;L
+Joshua;What's going on brother what are you doing here and what is this place anyway?;0;L
+Joseph;Follow me inside i will explained everything to you when we are inside. We aren't that safe outside.;0;L
+LoadScenes;Scene4.1
