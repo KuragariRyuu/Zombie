@@ -5,7 +5,7 @@ using System.IO;
 
 public class DialogueParser : MonoBehaviour
 {
-    public static DialogueParser dParser;
+    public bool onLoad = false;
 
     struct DialogueLine
     {
@@ -27,19 +27,6 @@ public class DialogueParser : MonoBehaviour
     public string file;
     List<DialogueLine> lines;
 
-    //void Awake()
-    //{
-    //    if (dParser == null)
-    //    {
-    //        DontDestroyOnLoad(gameObject);
-    //        dParser = this;
-    //    }
-    //    else if (dParser != this)
-    //    {
-    //        Destroy(gameObject);
-    //    }
-    //}
-
     // Use this for initialization
     void Start()
     {
@@ -54,10 +41,20 @@ public class DialogueParser : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if(onLoad == true)
+        {
+            onLoad = false;
 
+            print("OldLinesCleared");
+            lines.Clear();
+            print("BeginLoad");
+
+            LoadDialogue(file);
+            print("NewLinesLoaded");
+        }
     }
 
-    void LoadDialogue(string filename)
+    public void LoadDialogue(string filename)
     {
         string line;
         StreamReader r = new StreamReader(filename);
@@ -147,35 +144,4 @@ public class DialogueParser : MonoBehaviour
         }
         return new string[0];
     }
-
-    public void SaveParser()
-    {
-        BinaryFormatter bf = new BinaryFormatter();
-        FileStream file = File.Create(Application.persistentDataPath + "/dParserInfo.dat");
-        DParserData data = new DParserData();
-        data.parser = dParser;
-        bf.Serialize(file, data);
-        file.Close();
-    }
-
-    public DialogueParser LoadParser()
-    {
-        if (File.Exists(Application.persistentDataPath + "/dPaserInfo.dat"))
-        {
-            BinaryFormatter bf = new BinaryFormatter();
-            FileStream file = File.Open(Application.persistentDataPath + "/dParserInfo.dat", FileMode.Open);
-            DParserData data = (DParserData)bf.Deserialize(file);
-            file.Close();
-
-            dParser = data.parser;
-        }
-
-        return dParser;
-    }
-}
-
-[System.Serializable]
-class DParserData
-{
-    public DialogueParser parser;
 }

@@ -2,27 +2,33 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using System.Runtime.Serialization.Formatters.Binary;
+using System.IO;
 
 
 public class PauseMenu : MonoBehaviour {
+
+    public static PauseMenu pMenu;
 
     public static bool isPaused;
     public float windowWidth = 256;
     public float windowHeight = 100;
     public GUISkin newSkin;
-
-    DialogueManager dManager;
-    DialogueParser dParser;
-
-    void Awake()
-    {
-        dManager = FindObjectOfType<DialogueManager>();
-        dParser = FindObjectOfType<DialogueParser>();
-    }
+    public DialogueManager manager;
+    public DialogueParser parser;
 
     // Use this for initialization
+    void Awake()
+    {
+            pMenu = this;
+    }
+
     void Start () {
-        isPaused = false;
+       isPaused = false;
+
+       manager = FindObjectOfType<DialogueManager>();
+       parser = FindObjectOfType<DialogueParser>();
+
 	}
 	
 	// Update is called once per frame
@@ -81,13 +87,43 @@ public class PauseMenu : MonoBehaviour {
 
     void Save()
     {
-        dManager.SaveManager();
-      //  dParser.SaveParser();
+        BinaryFormatter bf = new BinaryFormatter();
+        FileStream file = File.Create(Application.persistentDataPath + "/Info.dat");
+        SaveLoadData data = new SaveLoadData();
+        data.dataFile = parser.file;
+        data.lineNum = manager.lineNum;
+        data.currentScene = SceneManager.GetActiveScene().name;
+
+        bf.Serialize(file, data);
+        file.Close();
     }
 
     void Load()
     {
-        dManager = dManager.LoadManager();
-     //   dParser = dParser.LoadParser();
-    }   
+        if (File.Exists(Application.persistentDataPath + "/Info.dat"))
+        {
+            BinaryFormatter bf = new BinaryFormatter();
+            FileStream file = File.Open(Application.persistentDataPath + "/Info.dat", FileMode.Open);
+            SaveLoadData data = (SaveLoadData)bf.Deserialize(file);
+            file.Close();
+
+
+
+           // print(data.dataFile);
+            manager.lineNum = data.lineNum;
+            parser.file = data.dataFile;
+            parser.onLoad = true;
+            SceneManager.LoadScene(data.currentScene);
+
+        }
+    }
+}
+
+[System.Serializable]
+class SaveLoadData
+{
+    public string dataFile;
+    public int lineNum;
+    public string currentScene;
+
 }

@@ -3,8 +3,6 @@ using System.Collections;
 using UnityEngine.UI;
 using System.Collections.Generic;
 using UnityEngine.SceneManagement;
-using System.Runtime.Serialization.Formatters.Binary;
-using System.IO;
 
 
 public class DialogueManager : MonoBehaviour
@@ -28,19 +26,6 @@ public class DialogueManager : MonoBehaviour
     public bool StringIsDisplaying = false;
     public GameObject choiceBox;
     public float eachCharDelay = 0.3f; //time delay between each char
-
-    //void Awake()
-    //{
-    //    if (dManager == null)
-    //    {
-    //        DontDestroyOnLoad(gameObject);
-    //        dManager = this;
-    //    }
-    //    else if (dManager != this)
-    //    {
-    //        Destroy(gameObject);
-    //    }
-    //}
 
     // Use this for initialization
     void Start()
@@ -231,36 +216,6 @@ public class DialogueManager : MonoBehaviour
         playerTalking = false;
         StringIsDisplaying = false;
     }
-
-    public void SaveManager()
-    {
-        BinaryFormatter bf = new BinaryFormatter();
-        FileStream file = File.Create(Application.persistentDataPath + "/playerInfo.dat");
-        DManagerData data = new DManagerData();
-        data.manager = dManager;
-        bf.Serialize(file, data);
-        file.Close();
-    }
-
-    public DialogueManager LoadManager()
-    {
-        if (File.Exists(Application.persistentDataPath + "/playerInfo.dat"))
-        {
-            BinaryFormatter bf = new BinaryFormatter();
-            FileStream file = File.Open(Application.persistentDataPath + "/dManagerInfo.dat", FileMode.Open);
-            DManagerData data = (DManagerData)bf.Deserialize(file);
-            file.Close();
-
-            dManager = data.manager;
-        }
-
-        return dManager;
-    }
-
 }
 
-[System.Serializable]
-class DManagerData
-{
-   public DialogueManager manager;
-}
+
