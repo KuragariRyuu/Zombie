@@ -1,7 +1,0 @@
- ;Joshua quietly walks into the room;0;L;
-Joshua;What happened here? Everything is scattered around.;0;L
-Joshua;Hello is anyone here? Hello?;0;L
- ;Joshua searches the room for clues;0;L
-Joshua;This looks bad;0;L
- ;Joshua rushed out the room;0;Ls
-

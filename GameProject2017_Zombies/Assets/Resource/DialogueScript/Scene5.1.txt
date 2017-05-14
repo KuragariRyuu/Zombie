@@ -1,8 +1,36 @@
- ;Ahh, man that was a close one. Gotta give this information to the rest it will cheer up the mood.;0;L
- ;While i was walking towards the brick house i notice something was off the door was left open.;0;L
- ;Ahh, man that was a close one. Gotta give this information to the rest it will cheer up the mood.;0;L
- ; While I was walking towards the brick house I notice something was off the door was left open.;0;L
- ; Wait. Who would leave the door this open? And where is the look out that was standing next to the door.;0;L
- ; Left puzzled I slowly approach the door. Step by step I started to get more anxious cause the atmosphere is too quiet. I could hear only the sound of winds blowing past behind me.;0;L
- ;As I approach the door I was thinking to myself did something happen? Or was it just a careless person? But no one is this careless I've gotta be alert;0;L
- ; When i reach the door I slowly peak inside. Nothing out in the ordinary but I couldn't really see inside. So I walked inside to get a better view.;0;L
+Seignour;Emily!Kane! your assigned to the fountain. Try to listen to whatever you can when they pass;0;L
+Seignour;Bevis!Talon! your assigned to be our lookout. Be sure to warn us if something goes wrong. Acel you go with them.;0;L
+ ;I saw Bevis signaled something to my uncle I wasn't sure what is that hand signal for, but I saw my uncle nodded;0;L
+Seignour; They are here everyone goes to your assigned places now!.;0;L
+ ;Everyone ran while I stood confused.;0;L
+ ;Was the hand signal just now to warn my uncle? How did Bevis know that they are already here? I don't hear or see anything.;0;L
+Talon;Acel! Come on you don't want to die do you?;0;L
+ ; I ran towards him in peer panic. I wasn't sure what was going on.;0;L
+ ;...... We waited for a few mins till I heard something;0;L
+ ;(Sound Effect for Tank rolling up);0;L
+Kane;It's a tank! Everyone it's a trap!.;0;L
+ ;(Sound Effect for tank shell);0;L
+Acel;Ahhh... What was that?!;0;L
+ ;I was disoriented and couldn't really see what was going on.;0;L
+ ;My vision was coming back and in front of me I saw the officer that murdered my parents.;0;L
+ ;I search around and found a pistol;0;L
+Acel;You will pay you Nazi!;0;R
+ ;I aimed my gun towards the officer. I steady my hands and breathe slowly.;0;L
+ ;Should I take the shot?;0;L
+Player;No:line,30;Yes:line,20
+Acel;You're mine;0;R
+Seignour;Acel!Beside you!;0;L
+Acel;Uncle?!;0;R
+ ;(Sound effect of being pushed with gunshot);0;L
+Acel;Nooo! Uncle!;0;R
+Seignour;Acel...Run for it.;0;L
+Kane;Acel come on. There is nothing we can do for him now. We have to go.;0;L
+ ;Kane pulled me with him and meet up with the rest at the back alley.;0;L
+ ;Uncle....;0;L
+ ;It was my fault... I should have been more careful..;0;L
+LoadScenes;Scene6.1
+Acel;It's not worth it.;0;R
+ ;I dropped my gun on the ground.;0;L
+Kane;Let's go Acel;0;L
+ ;I followed Kane to the others. We ran towards the back alley.;0;L
+LoadScenes;Scene6.2

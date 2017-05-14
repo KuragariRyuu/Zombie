@@ -1,0 +1,8 @@
+ ;Me and my uncle walked downstairs and we turned into a closet.;0;L
+ ;There's nothing there.;0;L
+Acel;Uncle what are we doing here?;0;R
+Seignour;You'll see.;0;L
+ ;He pulled up a trapped door right underneath the floor board.;0;L
+Acel;A serect room?;4;R
+ ;He didn't answer and climb down the ladder. So i followed him down.;0;L
+LoadScenes;Scene3.1

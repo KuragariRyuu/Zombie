@@ -1,0 +1,11 @@
+Acel;Hey;0;R
+ ;No response.;0;L
+ ;Seems like he ignored me;0;L
+ ;Maybe he wants to be left alone.;0;L
+ ;Who should I talk to next? Or should I just wait till the next morning?;0;L
+Player;Wait:line,6;Kane:line,7;Talon:line,8;Emily:line,9;Uncle:line,10
+LoadScenes;Scene5.1
+LoadScenes;Scene4.1.2
+LoadScenes;Scene4.1.1
+LoadScenes;Scene4.1.4
+LoadScenes;Scene4.1.5

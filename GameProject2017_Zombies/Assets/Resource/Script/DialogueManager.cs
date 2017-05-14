@@ -93,7 +93,6 @@ public class DialogueManager : MonoBehaviour
             dialogue = "";
             pose = 0;
             position = "";
-
             SceneManager.LoadScene(parser.GetContent(lineNum));
         }
         else if (parser.GetName(lineNum) != "Player")

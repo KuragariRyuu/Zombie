@@ -1,9 +1,0 @@
- ;I followed Joesph into the back ally and I saw him ran into the desterted area.;0;L
- ;But its strange what is he doing in this part of the town? Im not sure if i should be here.;0;L
-Player;Go back home:line,3;Stay:line;4
-LoadScenes;StartPage
- ;Gonna poke my head around and see whats up i guess.;0;L
- ;What was that? I heard Joseph just now. Huh? what does Mon coeur bleu sera sauve mean?;0;L
-Player;Go back:line,7;Move on:line,8
-LoadScenes;Scene4.3
-LoadScenes;Scene4.2

@@ -30,7 +30,7 @@ public class MainMenu : MonoBehaviour {
     {
         yield return new WaitForSeconds(1);
 
-        SceneManager.LoadScene("Scene1");
+        SceneManager.LoadScene("StartingScene");
     }
 
     public void ExitGame()
