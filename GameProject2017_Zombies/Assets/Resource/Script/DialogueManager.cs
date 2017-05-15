@@ -25,8 +25,10 @@ public class DialogueManager : MonoBehaviour
 
     public bool buttonIsCreated = false;
     public bool StringIsDisplaying = false;
+    public KeyCode DialogueInput = KeyCode.Space;
     public GameObject choiceBox;
-    public float eachCharDelay = 0.3f; //time delay between each char
+    public float SecondsBetweenCharacters = 0.5f;
+    public float CharacterRateDivider = 100.0f;
 
     // Use this for initialization
     void Start()
@@ -200,7 +202,14 @@ public class DialogueManager : MonoBehaviour
 
             if (currentCharIndex < stringLength)
             {
-                yield return new WaitForSeconds(eachCharDelay);
+                if (Input.GetKey(DialogueInput))
+                {
+                    yield return new WaitForSeconds(SecondsBetweenCharacters / CharacterRateDivider);
+                }
+                else
+                {
+                    yield return new WaitForSeconds(SecondsBetweenCharacters);
+                }
             }
             else
             {
