@@ -15,14 +15,14 @@
 Kane;Hey! Why did you slam it open?;0;L
 Acel;Is that you Kane?;0;R
 Kane;Yes it is;0;L
-Acel;Sorry i didn't know who you were.;0;R
+Acel;Sorry I didn't know who you were.;0;R
 ;I put my gun away and invited him in.;0;L
 Acel;Kane what happened? Your the only one that came back.;0;R
 Kane;I'm not sure. We were separated while we ran. I didn't know where you went.;0;L
 Kane;Is that Alair on the bed Acel?;0;L
 Acel;Wait, how did you know about Alair?;0;R
 Kane;Your uncle told me to take care of you if he didn't make it.;0;L
-Kane;I'm sorry for you losses.;0;L
+Kane;I'm sorry for you loss.;0;L
 Acel;I guess you know about the spy.;0;R
 Kane;Yes, I think they were behind this ambush also.;0;L
 Kane;We will have to wait for the others to figure this out. Right now all we can do is just wait.;0;L
@@ -38,10 +38,11 @@ Kane;Didn't think I would meet my end today.;0;L
 Acel;I'm with you all the way Kane.;0;L
  ;We both took our guns out.;0;L
  ;(SoundEffect Door begin broken down);0;L
- Kane;Let's jump out at least they would come towards us instead.;0;L
+Kane;Let's jump out at least they would come towards us instead.;0;L
  ;I nodded at Kane.;0;L
  ;I was scared, nervous. I didn't want to die.;0;L
  ;(SoundEffect for heavy walking on wood);0;L
 Kane;Lets go!;0;L
- ;We both jumped out the window. I prayed to my parents to protect Alair from harm. I wish him a good life.;0;L
+ ;We both jumped out the window.;0;L
+ ; Mother, Father please look after Alair and protect him.;0;L
 LoadScenes;Scene10.1

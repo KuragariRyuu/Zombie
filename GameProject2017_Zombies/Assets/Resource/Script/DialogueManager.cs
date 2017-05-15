@@ -9,6 +9,7 @@ public class DialogueManager : MonoBehaviour
 {
     public static DialogueManager dManager;
 
+    Fade fading;
     DialogueParser parser;
     public SoundManager soundManager;
     public string option;
@@ -36,11 +37,13 @@ public class DialogueManager : MonoBehaviour
         position = "L";
         playerTalking = false;
         parser = GameObject.Find("DialogueParser").GetComponent<DialogueParser>();
+        fading = GameObject.Find("Fade").GetComponent<Fade>();
+        fading.BeginFade(-1);
         lineNum = 0;
     }
 
     // Update is called once per frame
-    
+
     void Update()
     {
         if (Input.GetMouseButtonDown(0) && playerTalking == false && StringIsDisplaying == false && PauseMenu.isPaused == false)
@@ -55,34 +58,34 @@ public class DialogueManager : MonoBehaviour
 
     public void ShowDialogue()
     {
-       ResetImages();
-       ParseLine();
-       StartCoroutine(DisplayString(dialogue));
+        ResetImages();
+        ParseLine();
+        StartCoroutine(DisplayString(dialogue));
     }
 
     void UpdateUI()
     {
         if (!playerTalking)
         {
-          //  ClearButtons();
+            //  ClearButtons();
         }
-        
+
         //StartCoroutine(DisplayString(dialogue));
         nameBox.text = characterName;
     }
 
-  
 
-    void ParseLine() 
+
+    void ParseLine()
     {
-        if(parser.GetName(lineNum) == "SoundEffect")
+        if (parser.GetName(lineNum) == "SoundEffect")
         {
             playerTalking = true;
             characterName = "";
             dialogue = "";
             pose = 0;
             position = "";
-            StartCoroutine( PlaySound( parser.GetContent(lineNum) ) );
+            StartCoroutine(PlaySound(parser.GetContent(lineNum)));
 
             //StringIsDisplaying = false;
         }
@@ -93,7 +96,8 @@ public class DialogueManager : MonoBehaviour
             dialogue = "";
             pose = 0;
             position = "";
-            SceneManager.LoadScene(parser.GetContent(lineNum));
+            Debug.Log("Entering Fading");
+            StartCoroutine(FadingLoading(parser.GetContent(lineNum)));
         }
         else if (parser.GetName(lineNum) != "Player")
         {
@@ -113,11 +117,19 @@ public class DialogueManager : MonoBehaviour
             position = "";
             options = parser.GetOptions(lineNum);
             CreateButtons();
-       
+
         }
     }
 
- 
+    IEnumerator FadingLoading(string level)
+    {
+        Debug.Log("InFade");
+        float fadetime = fading.BeginFade(1);
+        yield return new WaitForSeconds(fadetime * 1.2f);
+        Debug.Log(fadetime);
+        Application.LoadLevel(level);
+    }
+
     public void ClearButtons()
     {
         for (int i = 0; i < buttons.Count; i++)
@@ -132,7 +144,7 @@ public class DialogueManager : MonoBehaviour
 
     void CreateButtons()
     {
-        
+
         for (int i = 0; i < options.Length; i++)
         {
             GameObject button = (GameObject)Instantiate(choiceBox);
