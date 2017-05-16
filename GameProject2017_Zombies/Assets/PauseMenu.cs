@@ -11,6 +11,7 @@ public class PauseMenu : MonoBehaviour {
     public static PauseMenu pMenu;
 
     public static bool isPaused;
+    public static bool canusemenu;
     public float windowWidth = 256;
     public float windowHeight = 100;
     public GUISkin newSkin;
@@ -41,6 +42,7 @@ public class PauseMenu : MonoBehaviour {
 
 	}
 
+
     void OnGUI()
     {
         GUI.skin = newSkin;
@@ -48,7 +50,7 @@ public class PauseMenu : MonoBehaviour {
         if(isPaused == true)
         {
             Time.timeScale = 0;
-
+            if(canusemenu == true)
             ShowPauseMenu();
         }
         else
@@ -58,7 +60,7 @@ public class PauseMenu : MonoBehaviour {
 
     }
 
-    void ShowPauseMenu()
+    public void ShowPauseMenu()
     {
         float windowX = (Screen.width - windowWidth)/2;
         float windowY = (Screen.height - windowHeight)/2;
@@ -85,7 +87,7 @@ public class PauseMenu : MonoBehaviour {
         GUILayout.EndArea();
     }
 
-    void Save()
+    public void Save()
     {
         BinaryFormatter bf = new BinaryFormatter();
         FileStream file = File.Create(Application.persistentDataPath + "/Info.dat");
@@ -98,7 +100,7 @@ public class PauseMenu : MonoBehaviour {
         file.Close();
     }
 
-    void Load()
+    public void Load()
     {
         if (File.Exists(Application.persistentDataPath + "/Info.dat"))
         {
