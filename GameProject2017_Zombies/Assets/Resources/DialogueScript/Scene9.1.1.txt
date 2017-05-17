@@ -1,0 +1,48 @@
+ ;I waited for hours and hours for someone to appear but no one came.;0;L
+ ;I looked outside and saw the darkening sky. The dark clouds started to gather together, engulfing the light that shines upon the town as the clouds moved towards each other.;0;L
+ ;The sunlight barely shines through the thickened cloud as the first rainfall fell upon the window I was looking through.;0;L
+ ;A shower of rainfall followed suit. I had a bad feeling about this, but I had to stay calm.;0;L
+ ;Suddenly I spotted someone running through the rain and into the house.;0;L
+ ;I couldn't see his face because of the rainfall. It got me nervous. I wasn't sure who it was it could be anyone.;0;L
+ ;I quietly put my brother down from my lap and stood up.;0;L
+ ;As i slowly walked to the door I took out my gun that was holstered on my waist.;0;L
+ ;I locked the door and listened to the sound of footsteps that slowly encroach forward.;0;L
+ ;My heart started racing as the footsteps got closer.;0;L
+ ;The footstep stoped. The person I saw was in front of the door.;0;L
+ ;I checked if my gun was off safety and slowly wrapped my hands onto the door knob.;0;L
+ ;I turned my hands and quickly pushed the door wide open.;0;L
+ ;(Sound Effect for someone stopping the door);0;L
+Kane;Hey! Why did you slam it open?;2;L
+Acel;Is that you Kane?;3;R
+Kane;Yes it is;2;L
+Acel;Sorry I didn't know who you were.;3;R
+;I put my gun away and invited him in.;0;L
+Acel;Kane what happened? Your the only one that came back.;4;R
+Kane;I'm not sure. We were separated while we ran. I didn't know where you went.;2;L
+Kane;Is that Alair on the bed Acel?;2;L
+Acel;Wait, how did you know about Alair?;3;R
+Kane;Your uncle told me to take care of you if he didn't make it.;2;L
+Kane;I'm sorry for you loss.;2;L
+Acel;I guess you know about the spy.;4;R
+Kane;Yes, I think they were behind this ambush also.;2;L
+Kane;We will have to wait for the others to figure this out. Right now all we can do is just wait.;2;L
+ ;(SoundEffect of trucks rolling up);0;L
+ ;I heard trucks rolling up.;0;L
+ ;Kane signaled me to keep quiet and He walked towards the window.;0;L
+Kane;Damn it's the military police Talon. We're surrounded.;2;L
+Kane;We need to hide Alair somewhere. We can't get him involved.;2;L
+ ;I pointed at the closet.;0;L
+Kane;Good idea. We will have to distract them from the closet.;2;L
+ ;We carried Alair into the closet and closed it up.;0;L
+Kane;Didn't think I would meet my end today.;2;L
+Acel;I'm with you all the way Kane.;2;L
+ ;We both took our guns out.;0;L
+ ;(SoundEffect Door begin broken down);0;L
+Kane;Let's jump out at least they would come towards us instead.;2;L
+ ;I nodded at Kane.;0;L
+ ;I was scared, nervous. I didn't want to die.;0;L
+ ;(SoundEffect for heavy walking on wood);0;L
+Kane;Lets go!;2;L
+ ;We both jumped out the window.;0;L
+ ; Mother, Father please look after Alair and protect him.;0;L
+LoadScenes;Scene10.1

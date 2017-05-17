@@ -1,0 +1,54 @@
+ ;I woke up from a dreadful nightmare. It seemed so real but I wasn't sure if it was. ;0;L
+Music;Play
+ ;Opening my eye's I started to notice that this isn't my room.;0;L
+ ; Where am I?;0;L
+ ;I tried to recall what happened last night but my head hurts every time I try to remember. The pain that I felt was so excruciating like there was a needle piercing through your brain.;0;L
+ ;I couldn't remember anything so I leaned upwards and looked around.;0;L
+ ;My uncle Seignour is on the chair next to me. Seems like he's asleep.;0;L
+ ;But why is he here?;0;L
+ ;He was reported missing after the disarmament and I never saw him since.;0;L
+SoundEffect;Bedripple
+ ;I heard movements right next to me. So, I quickly turned my head left and saw my little brother Alair sleeping.;0;L
+Alair;Acel.....;1;L
+ ;Alair mumbled and tears started to come out. He gripped my shirt on accdient.;0;L
+ ;His gripped on my shirt started to tighten and wouldn't let go. So I cleaned his tear with the sleeve of my shirt.;0;L
+ ;I silently watched the room waiting for something to happen.;0;L
+Alair;Mother, Father...!;2;L
+ ;Seems like Alair woke up from a nightmare.;0;L
+ ;Alair looked at me and broke into tears;0;L
+Acel;Alair what happened is everything alright?;4;R
+Alair;Mother....Father... They're gone...;2;L
+ ;My head started aching. Images from last night started to fill my head.;0;L
+ ;I hugged Alair.;0;L
+ ;So my parents did die. I thought it was a dream. My head was filled with lots of emotion. Hatred, depression, anger and fear.;0;L
+ ;I was the older brother so I kept my cool and quietly calmed Alair down.;0;L
+ ;Alair cried himself back to sleep, so I quietly lay him down on the bed.;0;L
+ ;I stood up and notice that my uncle was awake.;0;L
+ ;He grabbed a chair and invited me to sit.;0;L
+ ;....;0;L
+ ;Looking at his actions, he wasn't sure how to start the conversation at first.;0;L
+Seignour;I'm sorry Acel..;0;L
+ ;Huh? I was confused at what he was apologizing for.;0;L
+Acel;Uncle what are you apologizing for?;4;R
+Seignour;Your parent's death.... was my fault.;0;L
+Seignour;They were working for me, but someone ratted them out. I tried to warn your parents,but I was too late. I couldn't save them in time... I'm sorry Acel.;0;L
+ ;The atmosphere grew thicker as the weight of this news shocked me.;0;L
+ ;I wasn't sure what I was feeling was it anger or was it that I wanted vengeance.;0;L
+Acel;What did they die for Uncle? What were they a part of?;3;R
+Seignour;Sigh... We were building a resistance to fight back against the Nazi. We recruited four people, but I think one of them betrayed us and sold out yout parents. I'm not sure who betrayed us they all seemed like good lads.;1;L
+ ;How should i respond?;0;L
+Player;Calm:line,48 ;Angerly:line,39
+ ;A betrayer.....My blood started rush through my body and my veins started to show. I was angry.;0;L
+ ;I felt the need to bring justice to my family.;0;L
+Seignour;Acel, Calm down;0;L
+Acel;Uncle, you cannot stop me from finding the killer that killed my parents.;3;R
+ ;My uncle seemed worried he knew that he couldn't stop me.;0;L
+Seignour;Acel please be on your wits at all time and don't let revenge cloud your judgment.;0;L
+ ;We left the room and left my little brother sleeping;0;L
+LoadScenes;Scene2.1
+ ;I was angry at first, but I calmed my self down.;0;L
+Acel;Uncle, can I join? I want to know who killed my parents.;4;R
+ ;He saw that i was calm and noded.;0;L
+Seignour;Acel be on your wits at all times and keep a clean judgment.;0;L
+ ;We left the room and left my little brother sleeping;0;L
+LoadScenes;Scene2.2

@@ -1,0 +1,38 @@
+Seignour;Emily! Kane! yours assigned to the fountain. Try to listen to whatever you can when they pass;0;L
+Seignour;Bevis! Talon! yours assigned to be our lookout. Be sure to warn us if something goes wrong. Acel you go with them.;0;L
+ ;I saw Bevis signaled something to my uncle I wasn't sure what is that hand signal for, but I saw my uncle nodded;0;L
+Seignour; They are here everyone goes to your assigned places now!.;0;L
+ ;Everyone ran while I stood confused.;0;L
+ ;Was the hand signal just now to warn my uncle? How did Bevis know that they are already here? I don't hear or see anything.;0;L
+Talon;Acel! Come on you don't want to die do you?;1;L
+ ; I ran towards him in pure panic. I wasn't sure what was going on.;0;L
+ ;...... We waited for a few mins till I heard something;0;L
+ ;(Sound Effect for Tank rolling up);0;L
+Kane;It's a tank! Everyone it's a trap!.;2;L
+ ;(Sound Effect for tank shell);0;L
+Acel;Ahhh... What was that?!;3;L
+ ;I was disoriented and couldn't really see what was going on.;0;L
+ ;My vision start coming back. It was still a bit cloudy but I notice that officer. I wasn't sure where.;0;L
+ ;......It's the officer! I remember him from the night before!.;0;L
+ ;Everything started to turn red. My blood started boiling.;0;L
+ ;I search around and found a pistol;0;L
+Acel;You will pay you Nazi!;2;R
+ ;I aimed my gun towards the officer. I steady my hands and breathe slowly.;0;L
+ ;Should I take the shot?;0;L
+Player;No:line,33;Yes:line,22
+Acel;You're mine;2;R
+Seignour;Acel! Beside you!;0;L
+Acel;Uncle?!;3;R
+ ;(Sound effect of being pushed with gunshot);0;L
+Acel;Nooo! Uncle!;3;R
+Seignour;Acel...Run for it.;0;L
+Kane;Acel come on. There is nothing we can do for him now. We have to go.;2;L
+ ;Kane pulled me with him and meet up with the rest at the back alley.;0;L
+ ;Uncle....;0;L
+ ;It was my fault... I should have been more careful..;0;L
+LoadScenes;Scene6.1
+Acel;It's not worth it.;3;R
+ ;I dropped my gun on the ground.;0;L
+Kane;Let's go Acel;0;L
+ ;I followed Kane to the others. We ran towards the back alley.;0;L
+LoadScenes;Scene6.2
