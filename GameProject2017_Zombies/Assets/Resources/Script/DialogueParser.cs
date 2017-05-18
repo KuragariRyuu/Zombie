@@ -31,8 +31,6 @@ public class DialogueParser : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-        AudioManager.instance.PlayMusic(file, 1f);
-
         file = Application.dataPath + "/Resources/DialogueScript/" + file;
         file += ".txt";
 

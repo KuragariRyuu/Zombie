@@ -56,7 +56,6 @@
      <Compile Include="Assets\Resources\Script\Fade.cs" />
      <Compile Include="Assets\Resources\Script\MainMenu.cs" />
      <Compile Include="Assets\Resources\Script\Movie.cs" />
-     <Compile Include="Assets\Resources\Script\MusicManager.cs" />
      <Compile Include="Assets\Resources\Script\PauseMenu.cs" />
      <Compile Include="Assets\Resources\Script\SoundLibrary.cs" />
      <Compile Include="Assets\Resources\Script\Tres.cs" />

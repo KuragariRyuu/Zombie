@@ -33,7 +33,6 @@ public class DialogueManager : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-        AudioManager.instance.PlayMusic("MainMenuSound", 1f);
         dialogue = "";
         characterName = "";
         pose = 0;
@@ -94,7 +93,6 @@ public class DialogueManager : MonoBehaviour
             pose = 0;
             position = "";
             StartCoroutine(PlaySound(parser.GetContent(lineNum)));
-
             //StringIsDisplaying = false;
         }
         else if (parser.GetName(lineNum) == "LoadScenes")
@@ -131,7 +129,6 @@ public class DialogueManager : MonoBehaviour
 
     IEnumerator FadingLoading(string level)
     {
-        Debug.Log("InFade");
         float fadetime = fading.BeginFade(1);
         yield return new WaitForSeconds(fadetime * 1.2f);
         Debug.Log(fadetime);
@@ -230,11 +227,8 @@ public class DialogueManager : MonoBehaviour
     private IEnumerator PlaySound(string name)
     {
         StringIsDisplaying = true;
-
-        float length = AudioManager.instance.PlaySound2D(name);
-
-        yield return new WaitForSeconds(length);
-        Debug.Log(length);
+        yield return new WaitForSeconds(AudioManager.instance.PlaySound2D(name));
+        Debug.Log("Playsound done");
         playerTalking = false;
         StringIsDisplaying = false;
     }

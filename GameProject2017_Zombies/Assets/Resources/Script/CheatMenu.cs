@@ -9,8 +9,7 @@ public class CheatMenu : MonoBehaviour {
     public GameObject Root1;
     public GameObject Root2;
 	// Use this for initialization
-	void Start () {
-        AudioManager.instance.PlayMusic("MainMenuSound",1);
+	void Start () { 
         Root1.SetActive(false);
         Root2.SetActive(false);
         Branchingoption.SetActive(true);
