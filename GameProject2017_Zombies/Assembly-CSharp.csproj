@@ -46,7 +46,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\PauseMenu.cs" />
      <Compile Include="Assets\Resources\Script\AudioManager.cs" />
      <Compile Include="Assets\Resources\Script\Character.cs" />
      <Compile Include="Assets\Resources\Script\CheatMenu.cs" />
@@ -58,7 +57,9 @@
      <Compile Include="Assets\Resources\Script\MainMenu.cs" />
      <Compile Include="Assets\Resources\Script\Movie.cs" />
      <Compile Include="Assets\Resources\Script\MusicManager.cs" />
+     <Compile Include="Assets\Resources\Script\PauseMenu.cs" />
      <Compile Include="Assets\Resources\Script\SoundLibrary.cs" />
+     <Compile Include="Assets\Resources\Script\Tres.cs" />
      <Compile Include="Assets\SoundManager.cs" />
      <None Include="Assets\Resources\DialogueScript\Scene2.1.txt" />
      <None Include="Assets\Resources\DialogueScript\Scene1.txt" />
