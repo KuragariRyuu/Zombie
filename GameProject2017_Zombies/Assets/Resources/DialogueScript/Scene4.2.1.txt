@@ -1,0 +1,39 @@
+Acel; Hey, Talon, do you have a moment?;0;R
+Talon; Just a moment, let me finish preparing my stuff first.;0;L
+ ; I looked around while he was packing. Uncle seems to be busy planning for tomorrow. I wonder if he is free after this.;0;L
+Talon; I'm done;0;L
+Acel; I was just wondering if I could know more about you.;0;R
+Talon; What do you want to know? I'm limited on time so hurry up.;0;L
+ ; What should I ask him?;0;L
+Player;Parents:line,8;Childhood:line,20;Hometown:line,28
+Acel;Where are you parents?;0;R
+Talon; My mother didn't make it past the war.;0;L
+Talon; The roof collapsed on her.;1;L
+Talon; She was still breathing.....;1;L
+Talon; I tried to cry for help but no one came....;1;L
+Talon;I watched her die.;1;L
+Talon; As for my father, he disappeared right before the blast.;1; L
+Talon; I couldn't care less where he went. The only thing I knew is that he abandoned me and mother.;1;L
+Acel; I'm sorry to hear that.;0;R
+Talon; Anything else?;0;L
+ ;What should I ask next?;0;L
+Player;Finish:line,32;Childhood:line,20;Hometown:line,28
+Acel;I was wondering how did you get the nickname "The unbending" from?;0;R
+Talon; It was my classmate when I attended school.;0;L
+Talon; I had a rough childhood considering whom my father was.;1;L
+Talon; If it wasn't for my mother I wouldn't still be here.;1;L
+Acel; What happened?;0;R
+Talon; Maybe at a later date when we get to know each other more.;0;L
+Talon;Anything else?;0;L
+Player;Finish:line,32;Parents:line,20;Hometown:line,28
+Acel;You don't look like your from around here, Where are you from?;0;R
+Talon; Your right I'm not from around here. I'm from Metz it's northern from here.;0;L
+Talon;Anything else?;0;L
+Player;Finish:line,32;Childhood:line,20;Parents:line,8
+Acel; Thanks for your time Talon.;0;L
+ ; Who should I start with next? Or should I just wait till the next morning?;0; L
+Player;Wait:line,31;Kane:line,32;Bevis:line,33;Emily:line,34
+LoadScenes;Scene5.2
+LoadScenes;Scene4.2.2
+LoadScenes; Scene4.2.3
+LoadScenes;Scene4.2.4

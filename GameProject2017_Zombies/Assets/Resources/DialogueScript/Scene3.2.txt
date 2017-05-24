@@ -1,0 +1,41 @@
+ ;As I climbed down the ladder I noticed that there were four people in the room.;0;L
+ ;One of them was the one who sold out my parents.;0;L
+ ; I won't forgive them.;0;L
+Seignour;Everyone this is our latest recruit. Please welcome him.;0;L
+Acel;Hello, my name is Acel Liason. Nice to meet you.;0;R
+Emily; Hey, my name is Emily Moreau. Nice to meet you Acel;0;L
+Acel; Nice to meet you Emily.;0;R
+Talon; Hello, my name is Talon Laurent.;0;L
+Acel; Nice to meet you Talon.;0;R
+Kane;Hey, my name is Kane and nice to be working with you.;1;L
+Acel; Nice to meet you Kane.;0;R
+ ;He seemed like an Ex-military from the dog tag. Did he desert the army?;0;L
+ ;Wait...;0;L
+ ;I remembered there are 4 people down here. We're missing one.;0;L
+Seignour; Bevis, introduce yourself.;0;L
+Bevis;Bevis Vincent.;0;L
+Acel; Nice to meet you Bevis.;0;R
+Emily; Hey, if you need anything let me know.;0;L
+Acel; Thanks.;0;R
+Acel;Emily right?;0;R
+Emily;Come on...;0;L
+Emily; It's just been a few mins ago that I introduced myself.;0;L
+Acel;I'm sorry;0;L
+Kane;Emily stop teasing the new guy.;0;L
+Emily;Your no fun Kane.;0;L
+Seignour;Enough playing;0;L
+ ;My uncle rolled out a map.;0;L
+ ;There is a different atmosphere in the room.;0;L
+ ;Everyone started to quiet down and let off a sharp stare.;0;L  
+Seignour; Tomorrow we will start scouting Town Square. I've got intel that there will be an SS convey moving through there so keep your eyes peeled.;0;L
+Seignour; We do not know what they are up to so be cautious and never engage the enemy at all cost.;0;L
+Seignour; Everyone understands?!;1;L
+ ;We all nodded.;0;L
+ ;After that everyone left and went to their own places around the house.;0;L
+ ;Maybe I could walk around and talk to them to know a bit more.;0;L
+ ;Who should I start with?;0;L
+Player;Talon:line,37;Kane:line,38;Bevis:line,39;Emily:line,40
+LoadScenes;Scene4.2.1
+LoadScenes;Scene4.2.2
+LoadScenes;Scene4.2.3
+LoadScenes;Scene4.2.4

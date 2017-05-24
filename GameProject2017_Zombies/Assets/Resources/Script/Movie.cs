@@ -16,7 +16,7 @@ public class Movie : MonoBehaviour {
     {
         manager.playerTalking = true;
         movie.Play();
-        yield return new WaitForSeconds(3);
+        yield return new WaitForSeconds(5.01f);
         manager.playerTalking = false;
     }
 

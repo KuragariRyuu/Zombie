@@ -10,7 +10,7 @@ public class PauseMenu : MonoBehaviour
 {
 
     public static PauseMenu pMenu;
-
+    public string CurrMusic;
     public static bool isPaused;
     public bool isOnMenu;
     public float windowWidth = 256;
@@ -74,6 +74,7 @@ public class PauseMenu : MonoBehaviour
         yield return new WaitForSeconds(1);
         manager = FindObjectOfType<DialogueManager>();
         manager.lineNum = linenum;
+        AudioManager.instance.PlayMusic(CurrMusic,1);
     }
 
     void ShowPauseMenu()
@@ -120,6 +121,7 @@ public class PauseMenu : MonoBehaviour
         else
         data.lineNum = manager.lineNum;
         data.currentScene = SceneManager.GetActiveScene().name;
+        data.CurrMusic = CurrMusic;
 
         bf.Serialize(file, data);
         file.Close();
@@ -137,6 +139,7 @@ public class PauseMenu : MonoBehaviour
 
 
             // print(data.dataFile);
+            CurrMusic = data.CurrMusic;
             SceneManager.LoadScene(data.currentScene);
             PauseMenu.isPaused = false;
             StartCoroutine(waitingforload(data.lineNum));
@@ -154,5 +157,6 @@ class SaveLoadData
 {
     public int lineNum;
     public string currentScene;
+    public string CurrMusic;
 
 }

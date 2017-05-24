@@ -1,0 +1,9 @@
+ ;Ahhh...Finally, I'm here.;0;L
+ ;I was separated from Talon.;0;L
+ ;I didn't know what happened I just ran, but I didn't see him when I looked back..;0;L
+ ;My body was tired and covered in sweat. My muscles ache from the running I did.;0;L
+ ;I fell to my knees;0;L
+Acel;How did everything go wrong...;2;R
+Acel;Alair!;3;L
+ ;I total forgotten about him! I quickly ran inside the house and then went straight into the bedroom;0;L
+LoadScenes;Scene8.3.3

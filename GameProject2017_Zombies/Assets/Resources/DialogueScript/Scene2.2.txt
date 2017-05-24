@@ -1,0 +1,7 @@
+ ;We walked downstairs and stopped at a dead end.;0;L
+ ;There's nothing there.;0;L
+Acel;Uncle what are we doing here?;0;R
+ ;He pulled up a trapped door right underneath the floor board.;0;L
+Acel;A serect room?;4;R
+ ;He climb down the ladder. So I followed him down.;0;L
+LoadScenes;Scene3.2

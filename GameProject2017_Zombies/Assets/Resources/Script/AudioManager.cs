@@ -89,6 +89,7 @@ public class AudioManager : MonoBehaviour
     }
     public void PlayMusic(string soundName, float duration)
     {
+        PauseMenu.pMenu.CurrMusic =soundName;
         PlayMusic(library.GetClipFromName(soundName), duration);
     }
 

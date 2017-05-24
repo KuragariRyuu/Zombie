@@ -1,0 +1,35 @@
+Kane; They're catching up we have to split up into pairs there is no other way.;2;L
+Kane; Acel you choose first who to go with since you're the youngest.;2;L
+ ;Who should I choose?;0;L
+Player;Kane:line,4;Emily:line,12;Bevis:line,27;Talon:line,19
+Acel;Kane I want to be with you;4;L
+Kane; Ok the rest?;2;L
+Talon;I will go with Emily.;1;L
+Emily;What about Bevis? who will he pair up with? there isn't enough of us to all have pairs;2;L
+Bevis;It's alright I will go alone. It's better that way.;0;L
+ ;It's the first time I heard him speak something other than his name.;0;L
+Kane; They're closing in everyone we will Ronde Vu at the house. Be safe.;2;L
+LoadScenes;Scene7.2.1
+Acel;I choose Emily.;4;R
+Emily;Alrighty I'm with you.;0;L
+Kane;Talon your with me. Bevis you can come with if you want.;2;L
+Bevis;It's alright I will rather go alone on this. It's better that way.;0;L
+ ;It's the first time I heard him speak something other than his name.;0;L
+Kane; They're closing in everyone we will Ronde Vu at the house. Be safe.;2;L
+LoadScenes;Scene7.2.2
+Acel;Talon I'll be in your hands.;4;R
+Talon;Ok, just try to keep up with me.;2;L
+Kane;Emily and Bevis your with me.;2;L
+Bevis;I will go alone its better that way.;0;L
+ ;It's the first time I heard him speak something other than his name.;0;L
+Kane;If you say so.;2;L
+Kane; They're closing in everyone we will Ronde Vu at the house. Be safe.;2;L
+LoadScenes;Scene7.2.3
+Acel;Bevis, I'm with you.;0;L
+ ;He nodded but didn't say a word.;0;L
+Kane;Alright Emily and Talon your with me. We don't have enough to go as pairs but its best to split up into two groups at least.;2;L
+Talon;Kane!They're closing in!;2;L
+Kane;Everyone we will Ronde Vu at the house. Be safe.;2;L
+LoadScenes;Scene7.2.4
+
+

@@ -2,6 +2,7 @@
 using UnityEngine;
 using System.Runtime.Serialization.Formatters.Binary;
 using System.IO;
+using UnityEngine.SceneManagement;
 
 public class DialogueParser : MonoBehaviour
 {
@@ -25,13 +26,13 @@ public class DialogueParser : MonoBehaviour
             options = new string[0];
         }
     }
-    public string file;
+    string file;
     List<DialogueLine> lines;
 
     // Use this for initialization
     void Start()
     {
-        file = Application.dataPath + "/Resources/DialogueScript/" + file;
+        file = Application.dataPath + "/Resources/DialogueScript/" + SceneManager.GetActiveScene().name;
         file += ".txt";
 
         lines = new List<DialogueLine>();

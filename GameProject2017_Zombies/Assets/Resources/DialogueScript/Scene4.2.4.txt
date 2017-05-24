@@ -1,0 +1,26 @@
+Emily;Hey!;0;L
+Acel;Woah, you scared me Emily;3;R
+Emily; You were looking for me were you not?;0;L
+Acel;Yes I was.;0;R
+Emily;What's up?;0;L
+Acel; I wanted to know you a bit better is it alright with you?;0;R
+Emily; Sure what do you want to know?;0;L
+Acel; What happened to your family?;0;R
+Emily; Wow straight to the point Acel.;0;L
+Emily; Hmmm.. Well they're fine.;0;L
+Acel; Why did you decide to join the Resistance when your family is still alive?;0;R
+Emily; Well they live in this town. I've got to do everything I can to protect them from harm.;0;L
+Acel; Sounds like you really love them Emily.;1;R
+Emily; Yep I do.;0;L
+Acel; Thanks for being open about your family. See you around.;1;R
+Emily;Oh wait.;0;L
+Emily;Acel you seemed off a bit.;0;L
+Emily;You nervous?;0;L
+Acel;It's nothing;0;L
+Emily; Well if you need anything just tell me. See you.;1;R
+ ;Who should I start talking to next? Or should I just wait till the next morning?;0;L
+Player;Wait:line,22;Kane:line,23;Bevis:line,24;Talon:line,25
+LoadScenes;Scene5.2
+LoadScenes;Scene4.2.2
+LoadScenes;Scene4.2.3
+LoadScenes;Scene4.2.1

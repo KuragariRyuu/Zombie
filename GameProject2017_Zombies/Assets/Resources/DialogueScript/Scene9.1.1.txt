@@ -2,10 +2,11 @@
  ;I looked outside and saw the darkening sky. The dark clouds started to gather together, engulfing the light that shines upon the town as the clouds moved towards each other.;0;L
  ;The sunlight barely shines through the thickened cloud as the first rainfall fell upon the window I was looking through.;0;L
  ;A shower of rainfall followed suit. I had a bad feeling about this, but I had to stay calm.;0;L
+Music;EpicSound1
  ;Suddenly I spotted someone running through the rain and into the house.;0;L
  ;I couldn't see his face because of the rainfall. It got me nervous. I wasn't sure who it was it could be anyone.;0;L
  ;I quietly put my brother down from my lap and stood up.;0;L
- ;As i slowly walked to the door I took out my gun that was holstered on my waist.;0;L
+ ;As I slowly walked to the door I took out my gun that was holstered on my waist.;0;L
  ;I locked the door and listened to the sound of footsteps that slowly encroach forward.;0;L
  ;My heart started racing as the footsteps got closer.;0;L
  ;The footstep stoped. The person I saw was in front of the door.;0;L
@@ -22,7 +23,7 @@ Kane;I'm not sure. We were separated while we ran. I didn't know where you went.
 Kane;Is that Alair on the bed Acel?;2;L
 Acel;Wait, how did you know about Alair?;3;R
 Kane;Your uncle told me to take care of you if he didn't make it.;2;L
-Kane;I'm sorry for you loss.;2;L
+Kane;I'm sorry for you lose.;2;L
 Acel;I guess you know about the spy.;4;R
 Kane;Yes, I think they were behind this ambush also.;2;L
 Kane;We will have to wait for the others to figure this out. Right now all we can do is just wait.;2;L
@@ -42,7 +43,7 @@ Kane;Let's jump out at least they would come towards us instead.;2;L
  ;I nodded at Kane.;0;L
  ;I was scared, nervous. I didn't want to die.;0;L
  ;(SoundEffect for heavy walking on wood);0;L
-Kane;Lets go!;2;L
+Kane;Let's go!;2;L
  ;We both jumped out the window.;0;L
  ; Mother, Father please look after Alair and protect him.;0;L
 LoadScenes;Scene10.1

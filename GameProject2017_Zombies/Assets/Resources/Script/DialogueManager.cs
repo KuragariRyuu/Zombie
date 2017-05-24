@@ -19,6 +19,7 @@ public class DialogueManager : MonoBehaviour
     string position;
     string[] options;
     public bool playerTalking;
+    public bool lineending;
     List<Button> buttons = new List<Button>();
     public Text dialogueBox;
     public Text nameBox;
@@ -29,10 +30,12 @@ public class DialogueManager : MonoBehaviour
     public GameObject choiceBox;
     public float SecondsBetweenCharacters = 0.5f;
     public float CharacterRateDivider = 100.0f;
+    public GameObject StopIcon;
 
     // Use this for initialization
     void Start()
     {
+        StopIcon.SetActive(false);
         dialogue = "";
         characterName = "";
         pose = 0;
@@ -48,13 +51,25 @@ public class DialogueManager : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetMouseButtonDown(0) && playerTalking == false && StringIsDisplaying == false && PauseMenu.isPaused == false)
+        if (Input.GetMouseButtonDown(0) || Input.GetKeyDown(KeyCode.Space))
         {
+            if (playerTalking == false && StringIsDisplaying == false && PauseMenu.isPaused == false)
+            {
+                lineending = false;
+                ShowDialogue();
+                lineNum++;
+            }
+        }
+        if (lineending == true)
+            StopIcon.SetActive(true);
+        else
+            StopIcon.SetActive(false);
+        if (Input.GetKey(KeyCode.Z) && playerTalking == false && StringIsDisplaying == false && PauseMenu.isPaused == false)
+        {
+            lineending = false;
             ShowDialogue();
-
             lineNum++;
         }
-
         UpdateUI();
     }
 
@@ -69,7 +84,7 @@ public class DialogueManager : MonoBehaviour
     {
         if (!playerTalking)
         {
-            //  ClearButtons();
+             ClearButtons();
         }
 
         //StartCoroutine(DisplayString(dialogue));
@@ -87,6 +102,7 @@ public class DialogueManager : MonoBehaviour
         }
         if (parser.GetName(lineNum) == "SoundEffect")
         {
+            lineending = false;
             playerTalking = true;
             characterName = "";
             dialogue = "";
@@ -102,7 +118,6 @@ public class DialogueManager : MonoBehaviour
             dialogue = "";
             pose = 0;
             position = "";
-            Debug.Log("Entering Fading");
             StartCoroutine(FadingLoading(parser.GetContent(lineNum)));
         }
         else if (parser.GetName(lineNum) != "Player")
@@ -117,8 +132,6 @@ public class DialogueManager : MonoBehaviour
         else
         {
             playerTalking = true;
-            characterName = "";
-            dialogue = "";
             pose = 0;
             position = "";
             options = parser.GetOptions(lineNum);
@@ -131,7 +144,6 @@ public class DialogueManager : MonoBehaviour
     {
         float fadetime = fading.BeginFade(1);
         yield return new WaitForSeconds(fadetime * 1.2f);
-        Debug.Log(fadetime);
         Application.LoadLevel(level);
     }
 
@@ -205,9 +217,13 @@ public class DialogueManager : MonoBehaviour
 
             if (currentCharIndex < stringLength)
             {
-                if (Input.GetKey(DialogueInput))
+                if (Input.GetKey(DialogueInput) || Input.GetMouseButton(0))
                 {
                     yield return new WaitForSeconds(SecondsBetweenCharacters / CharacterRateDivider);
+                }
+                else if (Input.GetKey(KeyCode.Z))
+                {
+                    yield return new WaitForSeconds(0);
                 }
                 else
                 {
@@ -221,16 +237,19 @@ public class DialogueManager : MonoBehaviour
         }
         dialogueBox.text = dialogue;
         StringIsDisplaying = false;
-        
+        lineending = true;
+
     }
 
     private IEnumerator PlaySound(string name)
     {
         StringIsDisplaying = true;
+        StopIcon.SetActive(false);
         yield return new WaitForSeconds(AudioManager.instance.PlaySound2D(name));
         Debug.Log("Playsound done");
         playerTalking = false;
         StringIsDisplaying = false;
+        lineending = true;
     }
 }
 

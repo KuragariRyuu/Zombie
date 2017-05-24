@@ -1,0 +1,22 @@
+Acel; Hey Kane, you have a moment?;0;R
+Kane; Hey, yep I'm free. What's up?;1;L
+Acel; Well I wanted to know you better.;0;R
+Kane; Sure What do you want to know?;0;L
+Acel; I saw your dog tag you were in the army weren't you?;0;R
+Acel; Why'd did you leave the army?;0;R
+Kane; Hmmm..;3;L
+Kane; I'm not sure if I should be saying this but it's because I wasn't sure on what to do everyone was separated when we were routed.;3;L
+Kane; I will go to further details when we get closer Acel.;0;R
+Kane; For now just believe me that I didn't desert the army for my own cause.;2;L
+Acel; How did you end up here?;0;R
+Kane; Well I meet Seignour when I was trying to find out what happened to my unit.0;L
+Kane;He took me in and told me what happened. That's when I decided to help him.;0;L
+Acel; Thanks see you around;0;R
+Kane; See you.;1;L
+ ;Who should I start with next? Or should I just wait till the next morning?;0;L
+Player;Wait:line,17;Talon:line,18;Bevis:line,19;Emily:line,20
+LoadScenes;Scene5.2
+LoadScenes;Scene4.2.1
+LoadScenes;Scene4.2.3
+LoadScenes;Scene4.2.4
+

@@ -1,0 +1,71 @@
+;I waited for hours and hours for someone to appear but no one came.;0;L
+ ;I looked outside and saw the darkening sky. The dark clouds started to gather together, engulfing the light that shines upon the town as the clouds moved towards each other.;0;L
+ ;The sunlight barely shines through the thickened cloud as the first rainfall fell upon the window I was looking through.;0;L
+ ;A shower of rainfall followed suit. I had a bad feeling about this, but I had to stay calm.;0;L
+Music;EpicSound1
+ ;Suddenly I spotted someone running through the rain and into the house.;0;L
+ ;I couldn't see his face because of the rainfall. It got me nervous. I wasn't sure who it was it could be anyone.;0;L
+ ;I quietly put my brother down from my lap and stood up.;0;L
+ ;As I slowly walked to the door I took out my gun that was holstered on my waist.;0;L
+ ;I locked the door and listened to the sound of footsteps that slowly encroach forward.;0;L
+ ;My heart started racing as the footsteps got closer.;0;L
+ ;The footstep stopped. The person I saw was in front of the door.;0;L
+ ;I checked if my gun was off safety and slowly wrapped my hands onto the door knob.;0;L
+ ;I turned my hands and quickly pushed the door wide open. I pointed my gun straight onto the door.;0;L
+Emily;Ouch! Why did you have to push it Acel?;2;L
+Acel;Is that you Emily?;3;R
+Emily;Yes it's me why did you have to push the door so hard?;2;L
+Acel;I wasn't sure who came in, I thought it was someone else.;3;R
+Emily;Still you didn't have to push it so hard. Ow...;2;L
+ ;I helped her up.;0;L
+ ;(SoundEffect of trucks rolling up);0;L
+ ;I signaled Emily to be quiet and walked towards the window.;0;L
+ ;I looked out and saw a platoon of soldiers surrounding the house.;0;L
+Acel;Damn its the Military Police.;2;R
+ ;I looked back and saw that she wasn't surprised at all, but instead she looked nervous.;0;L
+ ;I have a bad feeling about this.;0;L
+Acel;Emily?;3;R
+ ;She didn't reply but instead pulled a gun from her ankle.;0;L
+Acel;Emily! What are you doing?;3;R
+Emily;I'm sorry Acel. Please just don't do anything stupid.;2;L
+ ;I had no other choice but to comply.;0;L
+Acel;Emily... Why are you doing this?;2;R
+Emily; It's.... for my family. They are being held hostage... I can't leave them alone! My little brother is just six ears old. I can't let him die!.;2;L
+Acel;So your the spy that sold out the group...;2;R
+Emily;No! I.... It wasn't supposed to be this way!.;2;L
+ ;Enraged by this I charged into Emily.;0;L
+Emily;Acel! Nooo! Stop!;2;L
+ ;(Sound Effect of pistol begin fired);0;L
+ ;I feel weird. Arghh I let my anger get ahead of me again.;0;L
+Acel;I'm sorry Emily I wasn't myself.;3;L
+Emily;Aaahhhhh!;2;L
+;She pointed at my left waist.;0;L
+;It's... Blood.. I got shot...;0;L
+Emily;I'm... Sorry Acel...I'm... Sorry.I'm... Sorry.;2;L
+Emily;I'm... Sorry.I'm... Sorry.;2;L
+Acel;It's alright Emily.;0;R
+Emily;I'm... Sorry Acel...I'm... Sorry.I'm... Sorry.;2;L
+Emily;I'm... Sorry.I'm... Sorry.;2;L
+ ;Seems like she is in shock, so I grabbed her hands.;0;L
+Acel;Emily!;2;R
+ ;She looked at me and her eyes was ready to cry.;0;L
+Acel;Emily! Get ahold of yourself.;2;R
+ ;(Sound effect of door being slammed);0;L
+Acel;Emily!;2;R
+ ;(Sound effect of getting slapped);0;L
+ ;She regained her conscious.;0;L
+Acel;Emily if you wanted to atone for what you did please hide my little brother somewhere he means a lot of to me.;1;R
+ ;I carried Alair to her.;0;L
+ ;Her eyes was full of guilt and wanted to repay her crimes so she nodded and carried Alair into the closet.;0;L
+ ;(Sound effect of people running on wooden floor);0;L
+ ;Arghh.. the gunshot wound start to exhibit pain.;0;L
+ ;I checked my pistol if it was fully loaded or not.;0;L
+Acel;Seems like this is where I end.;4;R
+ ;(Sound effect of door being bust open);0;L
+ ;I jumped out the window as they rushed in.;0;L
+ ;Mother, Father please look after Alair and protect him.;0;L
+LoadScenes;Scene10.1
+
+
+
+

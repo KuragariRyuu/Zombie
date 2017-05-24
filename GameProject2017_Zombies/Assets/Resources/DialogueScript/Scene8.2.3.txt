@@ -1,0 +1,9 @@
+Music;SadSound
+ ;I was scared because I had forgotten that I left him there. I quickly rushed into the room to check;0;L
+ ;As I entered Alair came rushing into me. The force of the impact made me lose my balaance and fell onto the floor.;0;L
+Alair;Brother brother don't leave me.. I don't want to be alone.;2;L
+ ;I felt sorry for him but i couldn't bring him along with me. It's just to dangerous for him. So i patted his head.;0;L
+Acel;I'm sorry Alair, I'm home;1;R
+ ;I stood up and carried Alair back to bed and I sat next to him to calm him down.;0;L
+ ;I looked out the window near the bed to see if anyone reached.;0;L
+LoadScenes;Scene9.2.3
